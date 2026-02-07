@@ -5,7 +5,7 @@ import pickle
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_DIR = BASE_DIR.parnet / "model"
+MODEL_DIR = BASE_DIR.parent / "model"
 ## loading the model
 model = None
 with open(MODEL_DIR / 'model.pkl', 'rb') as f:
